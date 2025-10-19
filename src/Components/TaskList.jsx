@@ -17,7 +17,7 @@ class TaskList extends Component {
               {task.text}
               {task.completed && " (Виконано)"}
             </p>
-            <button onClick={() => this.DeleteTask(task.id)}>Видалити</button>
+            <button className="task__btn" onClick={() => this.DeleteTask(task.id)}>Видалити</button>
           </li>
         ))}
       </ul>
